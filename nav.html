@@ -1,0 +1,32 @@
+<nav class = "navbar">
+    <div class = "dropdown">
+        <button onclick = "dropdown()" class = "dropbtn">
+            <i id = "nav_waffle" class="fa fa-bars"></i>
+        </button>
+        
+        <div id = "nav_down" class = "dropdown_content">
+            <a href = "#"><b>Home</b></a>
+            <a href = "#">Questions</a>
+            <a href = "#">Topics</a>
+            <a href = "#">Users</a>
+            <a href = "#">About</a>
+        </div>
+    </div>
+
+    <div id = "logobtn">
+        <a class = "nav_a" href = "#"><img id = "nav_logo" src = "images/logo.png"></img></a>
+    </div>
+
+    <div class = "search">
+        <!-- TODO: redirect to correct location -->
+        <form action="/test.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- TODO: these should change to an "account" button
+        after you log in / sign up-->
+    <div id = "log_in"><a class = "nav_a" href = "#">Log in</a></div>
+    <div id = "sign_up"><a class = "nav_a" href = "#">Sign up</a></div>
+</nav>

@@ -10,6 +10,7 @@
 
     position: fixed;
     top: 0;
+    height: 56px;
     width: 100%;
     z-index: 1;
 }
@@ -24,15 +25,15 @@
 
 #nav_logo{
     width: 200px;
+    padding: 7px;
 }
 
 #logobtn{
     display: inline;
     border: none;
     cursor: pointer;
-    padding: 4px;
-    height: 100%;
     top: 0;
+    height: 100%;
 }
 
 #logobtn:hover{
@@ -43,33 +44,46 @@
     display: inline;
     color: rgb(255, 87, 87);
     background-color: rgb(255, 202, 202);
-    padding: 9px;
     border-radius: 7px;
     float: right;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-left: 8px;
-    height: 16px;
+    margin: 8px 0px 8px 8px;
+    padding: 2px;
 }
 
 #log_in:hover{
     background: rgb(221, 176, 176);
 }
 
+#log_in a {
+    text-decoration: none;
+    padding: 9px;
+}
+
+#log_in a:hover{
+    color: inherit;
+}
+
 #sign_up{
     display: inline;
     color: rgb(255, 202, 202);
     background-color: rgb(255, 87, 87);
-    padding: 9px;
     border-radius: 7px;
     float: right;
-    margin-top: 8px;
-    margin-right: 8px;
-    height: 16px;
+    margin: 8px;
+    padding: 2px;
 }
 
 #sign_up:hover{
     background: rgb(183, 64, 64);
+}
+
+#sign_up a {
+    text-decoration: none;
+    padding: 9px;
+}
+
+#sign_up a:hover{
+    color: inherit;
 }
 
 /*Navbar search*/
@@ -118,10 +132,11 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    height: 100%;
 }
 
 .dropbtn:hover{
-    background-color: rgb(188, 188, 188)
+    background-color: rgb(188, 188, 188);
 }
 
 .dropdown_content{
@@ -139,10 +154,57 @@
     display: block;
 }
 
-.dropdown_content a:hover {background-color: #ddd}
-
-.show {display:block;}
+.dropdown_content a:hover {
+    background-color: #ddd;
+    color: inherit;
+    text-decoration: none;
+}
 
 #nav_waffle{
     pointer-events: none;
+}
+
+#acc_icon{
+    pointer-events: none;
+}
+
+.accbtn{
+    display: inline;
+    color: rgb(81, 81, 81);
+    background-color: rgb(227, 227, 227);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.accbtn:hover{
+    background-color: rgb(188, 188, 188);
+}
+
+.acc_content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.acc_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.acc_content a:hover {
+    background-color: #ddd;
+    color: inherit;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
 }

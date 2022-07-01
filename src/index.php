@@ -9,25 +9,24 @@
     <link rel="stylesheet" href="styles/00-index.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/logo_box.png">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="scripts/dropdown.js"></script>
     <title>Dangling Pointer</title>
 </head>
 <body>    
     <!--Navigation bar-->
-    <div id="nav-placeholder">
+    <div class="nav-placeholder">
     </div>
     <script>
         $(function(){
-            $("#nav-placeholder").load("nav.html");
+            $(".nav-placeholder").load("nav.php");
         });
     </script>
     <!--end of Navigation bar-->
 
     <div class = "section">
         <div id = "intro">
-            <img id = "big_logo" src = "images/logo_box.png">
+            <img id = "big-logo" src = "images/logo_box.png">
             <p>Welcome to <b>Dangling Pointer</b>!</p>
             <p>Find the nicest answers to your software questions, 
                     and provide others with nice answers to theirs</p>
@@ -50,15 +49,12 @@
             </div>
         </div>
         <div id = "join">
-            <img id = "earth_img" src = "images/earth.png">
-            <p><b>A public forum for nice people to give or receive help with their code</b></p>
+            <img id = "earth-img" src = "images/earth.png">
+            <p><b>A public forum for nice people to give or recieve help with their code</b></p>
             <p>A community and moderator driven space for finding or 
                 providing answers to technical challenges, with nice-ness at every corner!</p>
-            <div class = "button"><a href = "#">Join</a></div>
-            <div class = "button"><a href = "#">Search content</a></div>
-        </div>
-        <div id = "recent_posts">
-            
+            <div class = "button"><a href = "01-signup.php">Join</a></div>
+            <div class = "button"><a href = "02-questions.php">Search content</a></div>
         </div>
 
         <!--Footer-->

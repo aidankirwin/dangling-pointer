@@ -2,7 +2,7 @@
 .footer{
     margin-top: auto;
     width: 100%;
-    height: 175px;
+    height: 220px;
     padding-top: 15px;
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,21 +44,22 @@
 
 #footer_site{
     float: left;
-    width: 25%;
+    width: 26%;
 }
 
 #footer_company{
     float: left;
-    width: 25%;
+    width: 26%;
 }
 
 #footer_socials{
     float: left;
-    width: 25%;
+    width: 26%;
+    overflow: hidden;
 }
 
 #footer_copyright{
     float: right;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }

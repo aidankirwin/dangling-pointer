@@ -32,7 +32,6 @@
         </script>
         <!--end of side navigation bar-->
     
-
         <div id="content">
 
         </div>

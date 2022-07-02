@@ -1,0 +1,66 @@
+#sidebar {
+    max-width: 200px;
+    height: 100%;
+    border-right: 1px solid #bbb;
+}
+
+#sidebar-content {
+    position: fixed;
+    width: 201px;
+    top: 86px;
+    font-size: 11pt;
+}
+
+#home {
+    padding-bottom: 20px;
+}
+
+#public {
+    padding: 6px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    font-size: 10pt;
+    color: rgb(81, 81, 81);
+}
+
+#questions a {
+    color: rgb(81, 81, 81);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a {
+    color: rgb(81, 81, 81);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#home a {
+    color: rgb(81, 81, 81);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+#sidebar-content ul li div a:hover {
+    color: black;
+}
+
+#sidebar-content ul .active div {
+    background-color: rgb(227, 227, 227);
+}
+
+#sidebar-content ul .active div a {
+    font-weight: bold;
+    color: black;
+}
+
+.nav {
+    padding-left: 18px;
+}

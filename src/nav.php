@@ -11,8 +11,8 @@
         <div id = "nav_down" class = "dropdown_content">
             <a href = "index.php"><b>Home</b></a>
             <a href = "02-questions.php">Questions</a>
-            <a href = "#">Topics</a>
-            <a href = "#">Users</a>
+            <a href = "02-topics.php">Topics</a>
+            <a href = "02-users.php">Users</a>
             <a href = "#">About</a>
         </div>
     </div>

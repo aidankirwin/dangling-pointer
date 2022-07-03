@@ -13,7 +13,7 @@
     <script src="scripts/dropdown.js"></script>
     <title>Dangling Pointer</title>
 </head>
-<body>    
+<body onload="typeWriter()">    
     <!--Navigation bar-->
     <div class="nav-placeholder">
     </div>
@@ -32,18 +32,51 @@
                     and provide others with nice answers to theirs</p>
 
             <hr class = "solid">
-            <div id = "topics">
-                <p>Several topics, including...</p>
+
+            <div id = "type-container">
                 <table>
                     <tr>
-                        <td><a href = "#">C++</a></td>
-                        <td><a href = "#">C#</a></td>
-                        <td><a href = "#">Python</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href = "#">HTML</a></td>
-                        <td><a href = "#">CSS</a></td>
-                        <td><a href = "#">JavaScript</a></td>
+                        <td id="type"></td>
+
+                        <script>
+                        
+                            var i = 0;
+                            var j = 0;
+                            var txt = 'test test test test...';
+                            var speed = 60;
+
+                            function typeWriter() {
+                                if(i < txt.length) {
+                                    document.getElementById("type").innerHTML += txt.charAt(i);
+                                    i++;
+                                    setTimeout(typeWriter, speed);
+                                }
+                                else {
+                                    delay(1000).then(() => {
+                                        typeDeleter();
+                                    });    
+                                }
+                            }
+
+                            function typeDeleter() {
+                                if(i >= 0) {
+                                    document.getElementById("type").innerHTML = 
+                                        (document.getElementById("type").innerText).slice(0, (document.getElementById("type").innerText).length - 1);
+                                    i--;
+                                    setTimeout(typeDeleter, speed);
+                                }
+                                else{
+                                    delay(1000).then(() => {
+                                        typeWriter();
+                                    });                                    
+                                }
+                            }
+
+                            function delay(ms) {
+                                return new Promise(resolve => setTimeout(resolve, ms));
+                            }
+
+                        </script>
                     </tr>
                 </table>
             </div>
